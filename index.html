@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wom</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+<section class="view">
+	<div class="row">
+		<div class="col-md-2 col-md-offset-1 filtros">
+	 		<h3>BÚSQUEDA POR FILTRO</h3>
+	 		<div>
+		 		<div>
+			 		<h4>EQUIPOS</h4>
+			 		<ul class="filter">
+			 			<li><input type="checkbox"/><label>TELEFONÍA</label></li>
+			 			<li><input type="checkbox"/><label>BANDA ANCHA MÓVIL</label></li>
+			 		</ul>
+			 		<h4>POR MARCA</h4>
+			 		<ul class="filter">
+			 			<li><input type="checkbox" id="Apple"/><label>APPLE</label></li>
+			 			<li><input type="checkbox" id="Huawei"/><label>HUAWEI</label></li>
+			 			<li><input type="checkbox" id="LG"/><label>LG</label></li>
+			 			<li><input type="checkbox" id="Motorola"/><label>MOTOROLA</label></li>
+			 			<li><input type="checkbox" id="Nokia"/><label>NOKIA</label></li>
+			 			<li><input type="checkbox" id="Samsung"/><label>SAMSUNG</label></li>
+			 			<li><input type="checkbox" id="Sony"/><label>SONY</label></li>
+			 			<li><input type="checkbox" id="ZTE"/><label>ZTE</label></li>
+			 		</ul>		
+					<h4>TAMAÑO DE PANTALLA</h4>
+			 		<ul class="filter">
+			 			<li><input type="checkbox" id="3,9 pulgadas y menos"/><label>3,9 PULGADAS Y MENOS</label></li>
+			 			<li><input type="checkbox" id="4 a 4,9 pulgadas"/><label>4 A 4,9 PULGADAS</label></li>
+			 			<li><input type="checkbox" id="5 a 5,9 pulgadas"/><label>5 A 5,9 PULGADAS</label></li>
+			 			<li><input type="checkbox" id="6 pulgadas y más"/><label>6 PULGADAS Y MáS</label></li>
+			 		</ul>
+			 		<h4>CÁMARA</h4>
+			 		<ul class="filter">
+			 			<li><input type="checkbox" id="4,9 MP y menos"/><label>4,9 MP Y MENOS</label></li>
+			 			<li><input type="checkbox" id="5 MP a 9,9 MP"/><label>5 MP A 9,9 MP</label></li>
+			 			<li><input type="checkbox" id="10 MP a 14,9 MP"/><label>10 MP A 14,9 MP</label></li>
+			 			<li><input type="checkbox" id="15 MP y más"/><label>15 MP Y MáS</label></li>
+			 		</ul>
+				</div>
+			</div>
+		</div>		
+		<div class="col-md-8">
+			<div class="catalogo">
+		 		<div class="catalogue">
+		 			<h2>CATÁLOGO</h2>
+		 			<div class="cont-select">
+			 			<form>
+							<select class="filtro_orden" >
+								<option>Ordenar por</option>
+								<option>Mayor Precio</option>
+								<option>Menor Precio</option>
+							</select>
+						</form>
+						<form class="search" method="post" action="/">
+							<input type="text" name="busqueda" placeholder="buscar un equipo"/>
+							<input type="submit" value="BUSCAR">
+						</form>
+					</div>
+		 		</div>
+				
+				<div class="cels row">
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+    	<div class="col-sm-6 comparar1">
+				
+    	</div>
+
+    	<div class="col-sm-6 comparar2">
+				
+			</div>
+		</div>
+	</div>	
+</section>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+
+
+</body>
+</html>
