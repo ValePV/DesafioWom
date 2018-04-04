@@ -16,7 +16,7 @@ function success(data) {
     console.log(data.nextel_equipos);
     const equipos = data.nextel_equipos;
       for(i = 0; i< equipos.length ; i++) {
-         $('.cels').append("<div class='contain-inf-cel col-xs-12 col-sm-12 col-md-6'><div class='row'><div class='col-xs-6 col-sm-6 col-md-4 contain-cel'><span style='display: none;' class='id-equipo'>"+i+"</span><img class='img-cel image_product' src='assets/img/" + equipos[i]['imagen1'] + "'><img class='soport' src='assets/img/soporte.png'>"
+         $('.cels').append("<div class='contain-inf-cel col-xs-12 col-sm-12 col-md-6'><div class='row'><div class='col-xs-6 col-sm-6 col-md-4 contain-cel'><span style='display: none;' class='id-equipo'>"+i+"</span><img class='img-cel image_product' src='assets/img/" + equipos[i]['imagen1'] + "'><img class='soport img-responsive' src='assets/img/soporte.png'>"
         + "</div><div class='contain-info col-xs-11 col-sm-11 col-md-7'><h2>" + equipos[i]['marca_id'] + "</h2>"
         + "<h2>" + equipos[i]['nombre'] + "</h2><h4>PORTATÉ A UN PLAN Y PODRÁS:</h4>"
         + "<div class='precio'><div class='but-vert'>compra</div><span class='valor'>$" + equipos[i]['valor_venta']
@@ -47,40 +47,26 @@ function success(data) {
               //console.log('Funcionaaa');
               $('.compare-container').css('display', 'none');
               console.log(idEquipos);
+              console.log(equipos[0]);
               $('.cels').empty();
               for(i = 0; i < idEquipos.length ; i++){
                 var id = idEquipos[i];
-                const detailPhone = "<div class='container-compar col-xs-6 col-md-6'><img class='img-cel1' src='assets/img/" + equipos[id].imagen1 + "'><img class='soport' src='assets/img/soporte.png'><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><h2>" + equipos[id].marca_id + "</h2><h2>" + equipos[id].nombre + "</h2><h2>$" 
-              + equipos[id].valor_venta + "</h2><button class='buy'>COMPRAR</button><div class='selections'>" +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>MEMORIA"
-
-              +"<span class='caret'></span>"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].memoria + "</li><li>" + equipos[id].Memoria_dis + "</li></ul></div></div>"
-              +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>PANTALLA"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].pantalla + "</li></ul></div></div>"
-              +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>CÁMARA"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Camara + "</li></ul></div></div>"
-              +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>RAM"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].RAM + "</li></ul></div></div>"
-              +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>REDES"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Redes + "</li></ul></div></div>"
-              +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>PRECIO"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Precio + "</li></ul></div></div>"
-              +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>SOBRE EL EQUIPO"
-              +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Batería + "</li><li>" + equipos[id].Sistema_Operativo + "</li></ul></div></div>"
-
+                const detailPhone = "<div class='container-compar col-xs-6 col-md-6'><img class='img-cel1' src='assets/img/" + equipos[id].imagen1 + "'><br><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><h4>" + equipos[id].marca_id + "</h4><h4>" + equipos[id].nombre + "</h4><h3>$" 
+                  + equipos[id].valor_venta + "</h2><br><button class='buy'>COMPRAR</button><div class='selections'>" +"<div class='selections'><h4>MEMORIA</h4>"
+                  +"<ul><li>" + equipos[id].memoria + "</li><li>" + equipos[id].Memoria_dis + "</li></ul>"
+                  +"<h3>PANTALLA</h3><ul><li>" + equipos[id].pantalla + "</li></ul>"
+                  +"<h3>CAMARA</h3><ul><li>" + equipos[id].Camara + "</li></ul>"
+                  +"<h3>RAM</h3><ul><li>" + equipos[id].RAM + "</li></ul>"
+                  +"<h3>REDES</h3><ul><li>" + equipos[id].Redes + "</li></ul>"
+                  +"<h3>PRECIO</h3><ul><li>" + equipos[id].Precio + "</li></ul>"
+                  +"<h3>SOBRE EL EQUIPO</h3><ul><li>" + equipos[id].Batería + "</li><li>" + equipos[id].Sistema_Operativo + "</li></ul></div>"
+              
               $('.cels').append(detailPhone);
 
               $('.modal-body').append('<div class="dual-vision">'+detailPhone+'</div>')
 
               }
-              $('.cels').append("<div class='center'><button data-toggle='modal' data-target='#squarespaceModal' class='btn btn-primary center-block'>Click Me</button></div>");
+              $('.cels').append("<div class='center'><button data-toggle='modal' data-target='#squarespaceModal' class='btn btn-primary center-block'>Ver Simúltaneamente</button></div>");
 
             })
           }
