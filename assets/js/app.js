@@ -1,8 +1,7 @@
-$(document).ready(() => {
   // Numeros de Moviles comparandose
   var numMobile = 0;
 
-
+$(document).ready(() => {
   $.ajax({
   url: 'https://raw.githubusercontent.com/ValePV/DesafioWom/master/assets/js/data2.json',
   type: 'GET',
