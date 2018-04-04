@@ -55,7 +55,16 @@
       "destacados_empresa": "0",
       "multibanda_2g": "0",
       "multibanda_3g": "0",
-      "multibanda_4g": "0"
+      "multibanda_4g": "0",
+      "memoria":"16gb",
+      "pantalla":"5', 720x1280 pixeles",
+      "Camara":"13MP",
+      "RAM":"2gb",
+      "Redes":"4G",
+      "Memoria_dis":"9.67 gb",
+      "Batería":"Li-Ion de 2.200 mAh",
+      "Sistema_Operativo":"Android 5.0"
+
   },
   {
     "id": "58",
@@ -112,7 +121,15 @@
       "destacados_empresa": "0",
       "multibanda_2g": "1",
       "multibanda_3g": "1",
-      "multibanda_4g": "1"
+      "multibanda_4g": "1",
+      "memoria":"16gb",
+      "pantalla":"5.5', 1920x1080",
+      "Camara":"12MP",
+      "RAM":"16gb",
+      "Redes":"4G",
+      "Memoria_dis":"",
+      "Batería":"Li-Ion de 2.200 mAh",
+      "Sistema_Operativo":"iOS"
   },
   {
     "id": "83",
@@ -169,7 +186,16 @@
       "destacados_empresa": "0",
       "multibanda_2g": "1",
       "multibanda_3g": "1",
-      "multibanda_4g": "1"
+      "multibanda_4g": "1",
+      "memoria":"32gb",
+      "pantalla":"5.5', 1920x1080 pixeles",
+      "Camara":"12+2MP",
+      "RAM":"3gb",
+      "Redes":"4G",
+      "Memoria_dis":"24gb",
+      "Batería":"Li-ion 3340 mAh",
+      "Sistema_Operativo":"Android v6.0"
+
   },
   {
     "id": "75",
@@ -226,7 +252,15 @@
       "destacados_empresa": "0",
       "multibanda_2g": "1",
       "multibanda_3g": "1",
-      "multibanda_4g": "1"
+      "multibanda_4g": "1",
+      "memoria":"32gb",
+      "pantalla":"5.5', 1440x2560 pixeles ",
+      "Camara":"12MP",
+      "RAM":"4gb",
+      "Redes":"4G",
+      "Memoria_dis":"10gb",
+      "Batería":"3600 mAh",
+      "Sistema_Operativo":"Android 6.0"
   },
   {
     "id": "76",
@@ -283,7 +317,15 @@
       "destacados_empresa": "0",
       "multibanda_2g": "0",
       "multibanda_3g": "0",
-      "multibanda_4g": "0"
+      "multibanda_4g": "0",
+      "memoria":"32gb",
+      "pantalla":"6', 1080x1920 pixeles",
+      "Camara":"16MP",
+      "RAM":"4gb",
+      "Redes":"4G",
+      "Memoria_dis":"12MP",
+      "Batería":"3600 mAh",
+      "Sistema_Operativo":"Android 6.0"
   },
   {
     "id": "80",
@@ -340,7 +382,15 @@
       "destacados_empresa": "0",
       "multibanda_2g": "1",
       "multibanda_3g": "1",
-      "multibanda_4g": "1"
+      "multibanda_4g": "1",
+      "memoria":"16gb",
+      "pantalla":"4' 640x1136",
+      "Camara":"12MP",
+      "RAM":"2gb",
+      "Redes":"4G",
+      "Memoria_dis":"14gb",
+      "Batería":"Li-Po 1624 mAh",
+      "Sistema_Operativo":"iOs"
   }
 ]
 }
