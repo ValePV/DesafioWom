@@ -125,6 +125,14 @@ body {
   margin: 0; 
 }
 
+.compare-section {
+  width: 100%;
+  background-color: purple;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
 /* Media Queries */ 
 @media all and (max-width: 768px) {
   .logo {
