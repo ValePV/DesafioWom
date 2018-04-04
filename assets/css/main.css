@@ -1,3 +1,123 @@
+/* tipo de woomer 
+
+.textWoomers{
+  font-family: 'Cera';
+  font-weight: '700';
+  font-size: 1.5em;
+}
+
+.textWoomers2{
+  font-family: 'Cera';
+  font-weight: '500';
+  font-size: 1.125em;
+}
+
+.range {
+  -webkit-appearance: none;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.range::-webkit-slider-runnable-track {
+  background-color: #f2f3f7;
+  height: 6px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.range[disabled]::-webkit-slider-runnable-track {
+  border: 1px solid #f2f3f7;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+.range::-moz-range-track {
+  background-color: #f2f3f7;
+  height: 6px;
+  border-radius: 3px;
+  border: none;
+}
+
+.range::-ms-track {
+  color: transparent;
+  border: none;
+  background: none;
+  height: 6px;
+}
+
+.range::-ms-fill-lower { 
+  background-color: #f2f3f7;
+  border-radius: 3px;
+}
+
+.range::-ms-fill-upper { 
+  background-color: #f2f3f7;
+  border-radius: 3px;
+}
+
+.range::-ms-tooltip { display: none;  display and visibility only  }
+
+.range::-moz-range-thumb {
+  border-radius: 20px;
+  height: 18px;
+  width: 18px;
+  border: none;
+  background: none;
+  background-color: #831383;
+}
+
+.range:active::-moz-range-thumb {
+  outline: none;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 100%;
+  background-color: #831383;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+}
+
+.range[disabled]::-webkit-slider-thumb {
+  background-color: transparent;
+  border: 1px solid #f2f3f7;
+}
+
+.range:active::-webkit-slider-thumb {
+  outline: none;
+}
+
+.range::-ms-thumb { 
+  border-radius: 100%;
+  background-color: #831383;
+  height: 18px;
+  width: 18px; 
+  border: none;
+}
+
+.range:active::-ms-thumb {
+  border: none;
+}
+
+output {
+  border: 1px solid #f2f3f7;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  padding: .4em .6em;
+  border-radius: 3px;
+}
+
+.rangeValueDiv {
+  float: right;
+} */
+
+/* catalogo */
+
 @font-face {
   font-family: 'cera';
   src: url("../fonts/cera/cera-thin-webfont.woff2") format("woff2"), url("../fonts/cera/cera-thin-webfont.woff") format("woff");
@@ -143,6 +263,7 @@ body {
 .btn-compare-section:hover{
 	background-color: #cccccc;
 	color:#4b0a5a;
+
 }
 
 .dual-vision {
@@ -151,10 +272,12 @@ body {
   overflow: scroll;
 }
 
+
 .container-compar {
 	padding:30px 0px 10px 70px; ;
 
 }
+
 
 /* Media Queries */ 
 @media all and (max-width: 768px) {
@@ -229,7 +352,7 @@ ul{
 }
 .filtro_orden{
 	padding: 3px;
-	margin-left: 390px;
+	margin-left: 650px;
 }
 
 .soport{
@@ -355,4 +478,29 @@ ul{
 		border:1px solid #000;
 		height: 250px;
 	}
+}
+
+/* botones catálogo */
+
+.but-vert {
+	background-color: #2c0a38;
+	color: #fff;
+}
+
+.but-vert-arr {
+	background-color: #831383;
+	color: #fff;
+}
+
+.see-detail {
+	border: 2px solid #fe0084;
+	background-color: #fff;
+	color: #fe0084;
+	transition: all 1s ease;
+  position: relative;
+}
+
+.see-detail:hover {
+  background: #fe0084;
+  color: #fff !important;
 }
