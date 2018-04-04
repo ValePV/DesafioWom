@@ -256,7 +256,7 @@ body {
   z-index: 100;
 }
 
-.btn-compare {
+.btn-compare, .btn-primary {
   min-width: 120px;
   display: inline-block;
   background-color: #fe0084;

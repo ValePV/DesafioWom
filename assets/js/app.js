@@ -66,7 +66,7 @@ function success(data) {
               $('.modal-body').append('<div class="dual-vision">'+detailPhone+'</div>')
 
               }
-              $('.cels').append("<div class='center hidden-lg hidden-md'><button data-toggle='modal' data-target='#squarespaceModal' class='btn btn-primary center-block'>Ver Simúltaneamente</button></div>");
+              $('.cels').append("<div class='text-center hidden-lg hidden-md'><button data-toggle='modal' data-target='#squarespaceModal' class='btn btn-primary center-block'>Ver Simúltaneamente</button></div>");
 
             })
           }
