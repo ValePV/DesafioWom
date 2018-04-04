@@ -1,6 +1,3 @@
-  // Numeros de Moviles comparandose
-  var numMobile = 0;
-
 $(document).ready(() => {
   $.ajax({
   url: 'https://raw.githubusercontent.com/ValePV/DesafioWom/master/assets/js/data2.json',
@@ -60,4 +57,5 @@ for(i = 0; i< nextel_equipos.length ; i++){
   "</h4></div>");
 
 }*/
+
 

@@ -1,3 +1,4 @@
+
 /*$(document).ready(() => {
   $.ajax({
   url: 'https://github.com/tamybl/DesafioWom/raw/master/assets/data/equipos.json',
