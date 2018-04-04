@@ -9,12 +9,12 @@ $(document).ready(() => {
     
     for(i = 0; i< equipos.length ; i++){
     
-      $('.cels').append("<div class='contain-inf-cel'><div class='col-md-2 contain-cel'><img src='assets/img/" + equipos[i]['imagen1'] + "'><img class='soport' src='assets/img/soporte.png'>"
-        + "</div><div class='contain-info col-md-4'><h2>" + equipos[i]['marca_id'] + "</h2>"
+      $('.cels').append("<div class='contain-inf-cel col-xs-12 col-sm-12 col-md-6'><div class='row'><div class='col-xs-6 col-sm-6 col-md-4 contain-cel'><img class='img-cel' src='assets/img/" + equipos[i]['imagen1'] + "'><img class='soport' src='assets/img/soporte.png'>"
+        + "</div><div class='contain-info col-xs-11 col-sm-11 col-md-7'><h2>" + equipos[i]['marca_id'] + "</h2>"
         + "<h2>" + equipos[i]['nombre'] + "</h2><h4>PORTATÉ A UN PLAN Y PODRÁS:</h4>"
-        + "<div class='precio'><button class='but-vert'>compra</button><span class='valor'>$" + equipos[i]['valor_venta']
-        + "</span><span class='valor1'>*hasta 12 cuotas sin <br> interés de $" + equipos[i]['valor_cuota'] + "</span></div>"
-        + "<div class='arriendo'><button class='but-vert-arr'>arriendo</button><span>Pórtate con una cuota inicial desde: </span><span>$" + equipos[i]['cuota_arriendo'] + "</span><span> + 18 cuotas de $" + equipos[i]['cuota_arriendo'] + "</span></div><button class='see-detail'>VER DETALLES</button></div>");
+        + "<div class='precio'><div class='but-vert'>compra</div><span class='valor'>$" + equipos[i]['valor_venta']
+        + "</span><br><span class='valor1'>*hasta 12 cuotas sin interés</span><span class='valor1'> de $" + equipos[i]['valor_cuota'] + "</span></div>"
+        + "<div class='arriendo'><div class='but-vert-arr'>arriendo</div><span class='valor2'>Pórtate con una cuota inicial</span><br> <span class='valor1'>desde:</span><span class='valor3'> $" + equipos[i]['cuota_arriendo'] + "</span><br><span class='valor1'> + 18 cuotas de $" + equipos[i]['cuota_arriendo'] + "</span></div><button class='see-detail'>VER DETALLES</button><button id='compara' class='see-detail'>COMPARAR</button></div></div></div>");
 
     }
   
@@ -37,25 +37,6 @@ function error(error) {
   console.log(error);
 };
 
-
-
-/*
-$.ajax({url: "https://raw.githubusercontent.com/ValePV/DesafioWom/master/assets/js/data2.json", success: function(result){
-        console.log(result);
-        for(i = 0; i< result.nextel_equipos.length ; i++){
-  $('.cels').append("<div class='row contain-inf-cel'><div class='col-md-5 contain-cel'><img class='celsphone' src='assets/images/"
-        + nextel_equipos[i]['imagen1'] + "'></div><div class='col-md-6'><h5>" + nextel_equipos[i]['marca_id'] + "</h5>"
-        + "<h4>" + nextel_equipos[i]['nombre'] +
-  "</h4></div>");
-
-}
-}});*/
-/*
-for(i = 0; i< nextel_equipos.length ; i++){
-  $('.cels').append("<div class='row contain-inf-cel'><div class='col-md-5 contain-cel'><img class='celsphone' src='assets/images/"
-        + nextel_equipos[i]['imagen1'] + "'></div><div class='col-md-6'><h5>" + nextel_equipos[i]['marca_id'] + "</h5>"
-        + "<h4>" + nextel_equipos[i]['nombre'] +
-  "</h4></div>");
-
-}*/
-
+// $('#compara').click(function(){
+//   $(this).
+// })

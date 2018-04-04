@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* tipo de woomer */
 
 .textWoomers{
@@ -117,16 +118,31 @@ output {
 }
 
 /* catalogo */
+=======
+>>>>>>> upstream/master
 
 .celsphone{
 	width: 140px;
 }
+.img-cel{
+	padding-top: 10px;
+}
 .contain-cel{
 	float: left;
+	margin-top:20px;
+	margin-left: 7px;
+	padding: 0;
+}
+
+.contain-info{
+	margin-left: 7px;
+	margin-top:20px;
+	padding: 0;
 }
 
 ul{
 	list-style: none;
+	padding-left: 10px;
 }
 
 .filtros{
@@ -162,19 +178,113 @@ ul{
 	width: 120px;
 	/*float: left;*/
 	display: block;
+	margin-top: 20px;
 }
-.but-vert, .but-vert-arr{
+.but-vert{
 	transform: rotate(-90deg);
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top:30px;
+	margin-left: 3px;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid #000;
+
+	
+}
+.but-vert-arr{
+	transform: rotate(-90deg);
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid #000;
+	margin-top: 20px;
+	
+	
 }
 .contain-info h2{
 	font-size: 18px;
+	margin-left: 33px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 .contain-info h4{
 	font-size: 12px;
+	margin-left: 33px;
+	
 }
 .valor{
 	font-size: 27px;
+
 }
 .valor1{
 	font-size: 12px;
+<<<<<<< HEAD
 }
+=======
+	margin-left: 80px;
+
+}
+
+.valor2{
+	font-size: 12px;
+
+}
+
+.valor3{
+	font-size: 20px;
+}
+.see-detail{
+	margin-top: 13px;
+	margin-left: 13px;
+}
+
+
+
+@media (max-width: 768px) { 
+	.img-cel{
+		width: 100px;
+		margin-left: 80px;
+	}
+	.contain-inf-cel{
+		margin-left: 65px;
+	}
+	.soport{
+		width: 100px;
+		/*float: left;*/
+		display: block;
+		margin-top: 20px;
+		margin-left: 80px;
+	}
+	.contain-info h2{
+		font-size: 24px;
+		margin-left: 33px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.contain-info h4{
+		font-size: 12px;
+		margin-left: 33px;
+	
+	}
+	.input-seach, .form-control{
+		width: 160px;
+	}
+
+	.btn-filter{
+		width: 270px;
+		margin-top:10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.menu-filter{
+		width: 265px;
+		padding-left: 10px;
+	}
+	.see-detail{
+		margin-top: 13px;
+	}
+}
+>>>>>>> upstream/master
