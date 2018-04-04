@@ -44,11 +44,14 @@ function success(data) {
             $('.btn-compare').click(function () {
               //console.log('Funcionaaa');
               console.log(idEquipos);
+
+              $('.cels').empty();
               for(i = 0; i < idEquipos.length ; i++){
                 var id = idEquipos[i];
-                const detailPhone = "<div class='cont-compatarion1'><img class='img-cel1' src='assets/img/" + equipos[id].imagen1 + "'><h1>V</h1><img class='soport' src='assets/img/soporte.png'><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><h2>" + equipos[id].marca_id + "</h2><h2>" + equipos[id].nombre + "</h2><h2>" 
-              + equipos[id].valor_venta + "</h2><button id='buy'>COMPRAR</button><div class='selections'>" +"<div class='selections'><div class='dropdown'>"
-              +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>MEMORIA"
+                const detailPhone = "<div class='container-compar col-xs-6 col-md-6'><img class='img-cel1' src='assets/img/" + equipos[id].imagen1 + "'><img class='soport' src='assets/img/soporte.png'><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><h2>" + equipos[id].marca_id + "</h2><h2>" + equipos[id].nombre + "</h2><h2>$" 
+              + equipos[id].valor_venta + "</h2><button class='buy'>COMPRAR</button><div class='selections'>" +"<div class='selections'><div class='dropdown'>"
+              +"<button class='btn btn-default dropdown-toggle' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>MEMORIA"
+
               +"<span class='caret'></span>"
               +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].memoria + "</li><li>" + equipos[id].Memoria_dis + "</li></ul></div></div>"
               +"<div class='selections'><div class='dropdown'>"
@@ -69,7 +72,9 @@ function success(data) {
               +"<div class='selections'><div class='dropdown'>"
               +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>SOBRE EL EQUIPO"
               +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Batería + "</li><li>" + equipos[id].Sistema_Operativo + "</li></ul></div></div>"
-              $('.first-comparation').append(detailPhone);
+
+              $('.cels').append(detailPhone);
+
               $('.modal-body').append('<div class="dual-vision">'+detailPhone+'</div>')
 
      }
@@ -92,6 +97,7 @@ function success(data) {
 
       $('.btn-compare').click(function () {
         console.log('Funcionaaa');
+
       })
 
     }
