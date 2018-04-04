@@ -33,7 +33,58 @@ function error(error) {
 };
 
 
-$('#compara').click(function(){
-  $(this).
+$(document).ready(() => {
+  $.ajax({
+  url: 'https://raw.githubusercontent.com/ValePV/DesafioWom/master/assets/js/data2.json',
+  type: 'GET',
+  dataType: 'JSON',
+  success: function success(data) {
+    var equipos = data.nextel_equipos;
+    console.log(equipos[0].nombre)
+    
+    for(i = 0; i< equipos.length ; i++){
+      $('.first-comparation').append("<div class='cont-compatarion1'><img class='img-cel1' src='assets/img/" + equipos[id].imagen1 + "'><h1>V</h1><img class='soport' src='assets/img/soporte.png'><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><h2>" + equipos[id].marca_id + "</h2><h2>" + equipos[id].nombre + "</h2><h2>" 
+        + equipos[id].valor_venta + "</h2><button id='buy'>COMPRAR</button><div class='selections'>"
+        +"<button id='divide' data-toggle='modal' data-target='#myModal'>DIVIDIR PANTALLA</button>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>MEMORIA"
+        +"<span class='caret'></span>"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].memoria + "</li><li>" + equipos[id].Memoria_dis + "</li></ul></div></div>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>PANTALLA"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].pantalla + "</li></ul></div></div>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>CÁMARA"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Camara + "</li></ul></div></div>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>RAM"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].RAM + "</li></ul></div></div>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>REDES"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Redes + "</li></ul></div></div>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>PRECIO"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Precio + "</li></ul></div></div>"
+        +"<div class='selections'><div class='dropdown'>"
+        +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>SOBRE EL EQUIPO"
+        +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Batería + "</li><li>" + equipos[id].Sistema_Operativo + "</li></ul></div></div>");
+
+
+   
+
+     }
+  
+  error: error
+
+  }
+  })
+
+
+
+
 })
+
+function error(error) {
+  console.log(error);
+};
 

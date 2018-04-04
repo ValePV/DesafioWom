@@ -161,4 +161,17 @@ ul{
 	.see-detail{
 		margin-top: 13px;
 	}
+	.modal-body{
+		max-height: 100vh;
+	}
+	.divi1{
+		overflow: scroll;
+		border:1px solid #000;
+		height: 250px;
+	}
+	.divi2{
+		overflow: scroll;
+		border:1px solid #000;
+		height: 250px;
+	}
 }
