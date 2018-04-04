@@ -118,6 +118,174 @@ output {
 
 /* catalogo */
 
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera/cera-thin-webfont.woff2") format("woff2"), url("../fonts/cera/cera-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera/cera-light-webfont.woff2") format("woff2"), url("../fonts/cera/cera-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera/cera-regular-webfont.woff2") format("woff2"), url("../fonts/cera/cera-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera/cera-medium-webfont.woff2") format("woff2"), url("../fonts/cera/cera-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera/cera-bold-webfont.woff2") format("woff2"), url("../fonts/cera/cera-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera/cera-black-webfont.woff2") format("woff2"), url("../fonts/cera/cera-black-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; 
+}
+
+body {
+  font-family: 'cera';
+}
+
+/* Navigation */ 
+.navigation {
+  margin: 0;
+  padding: 4px 0 0 0;
+  background: linear-gradient(to right, #701A7F , #641672);
+  border-radius: 0;
+  height: auto;
+  color: #fff;
+}
+
+.navigation > li > a {
+  color: #fff;
+}
+
+.menu {
+  clear: both;
+  background: linear-gradient(to left, #2c0a38 , #641672);
+  /* float: right; */
+  width: 100%;
+}
+
+.menu li {
+  float: right;
+  padding: 1em;
+}
+
+.menu li:hover {
+  background-color: #641672;
+}
+
+.menu li a {
+  color: #fff !important;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+
+.navbar-toggle {
+
+}
+
+.btn-miwom {
+  border: 1px solid #fff;
+  border-radius: 0.3rem;
+  padding: 8px 4px;
+  margin:  0 2px;
+  transition: all 0.6s ease;
+}
+
+.btn-miwom a {
+  color: #fff;
+}
+
+.btn-miwom:hover, .btn-miwom a:hover {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.navbar-right {
+  margin: 0 10px 0 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.menu-left {
+  background-color: none;
+  border-top: 4px solid transparent;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.activo {
+  border-top: 4px solid #fff;
+}
+
+.reset {
+  padding:0;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background: url(../img/bgheader.png) no-repeat center top;
+  background-size: cover;
+  height: 500px;
+  margin: 0; 
+}
+
+.compare-container {
+  width: 100%;
+  background-color: purple;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+.btn-compare-section {
+  display: inline-block;
+}
+
+.dual-vision {
+  width: 100%;
+  height: 45vh;
+  overflow: scroll;
+}
+
+/* Media Queries */ 
+@media all and (max-width: 768px) {
+  .logo {
+    height: 30px;
+    margin: 0 4px;
+  }
+
+  .navigation {
+    height: 58px;
+  }
+
+  #myNavbar {
+    background-color: purple;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav> li> a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
 .celsphone{
 	width: 140px;
 }
@@ -168,7 +336,7 @@ ul{
 }
 .filtro_orden{
 	padding: 3px;
-	margin-left: 390px;
+	margin-left: 650px;
 }
 
 .soport{
@@ -218,6 +386,7 @@ ul{
 .valor1{
 	font-size: 12px;
 	margin-left: 80px;
+
 }
 
 .valor2{
@@ -279,38 +448,42 @@ ul{
 	.see-detail{
 		margin-top: 13px;
 	}
+	.modal-body{
+		max-height: 100vh;
+	}
+	.divi1{
+		overflow: scroll;
+		border:1px solid #000;
+		height: 250px;
+	}
+	.divi2{
+		overflow: scroll;
+		border:1px solid #000;
+		height: 250px;
+	}
 }
 
-/* modal contrata */
+/* botones catálogo */
 
-.modal-title {
-  text-align: center;
-  font-family: 'Cera';
-  font-weight: '700';
-  /* font-size: 1.5em; */
+.but-vert {
+	background-color: #2c0a38;
+	color: #fff;
 }
 
-.pDelModal {
-  text-align: center;
-  color: white;
-  background-color: #4b0a5a;
-  padding: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 3%;
+.but-vert-arr {
+	background-color: #831383;
+	color: #fff;
 }
 
-.input-group {
-  padding-bottom: 3%;
+.see-detail {
+	border: 2px solid #fe0084;
+	background-color: #fff;
+	color: #fe0084;
+	transition: all 1s ease;
+  position: relative;
 }
 
-.btn-primary {
-  width: 100%;
-  background-color: #4b0a5a !important;
-}
-
-.pDelFooter {
-  text-align: center;
-  font-family: 'Cera';
-  font-weight: '700';
-  font-size: 1.7em;
+.see-detail:hover {
+  background: #fe0084;
+  color: #fff !important;
 }
