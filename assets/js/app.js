@@ -34,6 +34,8 @@ function success(data) {
 
           //numMobile++;
           if(numMobile < 1) {
+            $('.compare-container').css('height', 'auto');
+            $('.compare-container').css('padding', '1em');
              component('button', 'btn btn-compare', 'COMPARAR', '.btn-compare-section');
              $('.btn-compare-section').find('.btn').prop('disabled', true);
           }
@@ -43,7 +45,9 @@ function success(data) {
 
             $('.btn-compare').click(function () {
               //console.log('Funcionaaa');
+              $('.compare-container').css('display', 'none');
               console.log(idEquipos);
+              $('.cels').empty();
               for(i = 0; i < idEquipos.length ; i++){
                 var id = idEquipos[i];
                 const detailPhone = "<div class='cont-compatarion1'><img class='img-cel1' src='assets/img/" + equipos[id].imagen1 + "'><h1>V</h1><img class='soport' src='assets/img/soporte.png'><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span><h2>" + equipos[id].marca_id + "</h2><h2>" + equipos[id].nombre + "</h2><h2>" 
@@ -69,11 +73,12 @@ function success(data) {
               +"<div class='selections'><div class='dropdown'>"
               +"<button class='btn btn-default dropdown-toggle' type='button' id='dropdownMenu1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>SOBRE EL EQUIPO"
               +"<ul class='dropdown-menu' aria-labelledby='dropdownMenu1'><li>" + equipos[id].Batería + "</li><li>" + equipos[id].Sistema_Operativo + "</li></ul></div></div>"
-              $('.first-comparation').append(detailPhone);
+              $('.cels').append(detailPhone);
+
               $('.modal-body').append('<div class="dual-vision">'+detailPhone+'</div>')
 
-     }
-     $('.first-comparation').append("<div class='center'><button data-toggle='modal' data-target='#squarespaceModal' class='btn btn-primary center-block'>Click Me</button></div>");
+              }
+              $('.cels').append("<div class='center'><button data-toggle='modal' data-target='#squarespaceModal' class='btn btn-primary center-block'>Click Me</button></div>");
 
             })
           }
