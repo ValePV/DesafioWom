@@ -6,17 +6,55 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wom</title>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<section class="view">
-	<div class="row">
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navigation">
+  <div class="container-fluid reset">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/img/logowom.svg" alt="" class="img-responsive logo"></a>
+    </div>
+    <div class="collapse navbar-collapse reset" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="activo menu-left"><a href="#">Personas</a></li>
+        <li class="menu-left"><a href="#">Empresas</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="btn-miwom"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> PAGA TU CUENTA</a></li>
+        <li class="btn-miwom"><a href="#"><span class="glyphicon glyphicon-earphone"></span> CONTACTANOS</a></li>
+        <li class="btn-miwom"><a href="#"><span class="glyphicon glyphicon-user"></span> SUCURSAL MIWOM</a></li>
+      </ul>
+      <ul class="nav navbar-nav menu text-uppercase">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Planes</a></li>
+        <li><a href="#">Prepago</a></li>
+        <li><a href="#">Internet</a></li>
+        <li><a href="#">Equipos</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container-fluid reset">
+  <div class="row header"></div>
+</section>
+
+<section class="view container">
+	<div class="row">         
 		<div class="col-xs-10 col-md-10 col-md-offset-1">
-			<div class="row">
+			<div class="row hidden-md hidden-lg">
 				<div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
 					<div class="dropdown">
 					  <button class="btn btn-default btn-filter dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -139,12 +177,42 @@
 						</div>
 				 	</div>
 				</div>
+		 	</div>
 		</div>
 	</div>
 </section>
-<button data-toogle="modal" data-target="#contrata">modal</button>
+<section class="comparation">
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 first-comparation">
+		
+			
+		</div>
+		<div class="center"><button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary center-block">Click Me</button></div>
+	</div>
+</section>
+  <div class="compare-section">
+    
+  </div>
 
-	<div class="modal" id="contrata" tabindex="-1" role="dialog">
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+		</div>
+		<div class="modal-body">
+			<div class="divi1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore illum numquam ducimus, cumque fugiat soluta, odio odit cum. Error inventore temporibus, molestias quos quas fugiat nostrum similique ipsa distinctio rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, culpa doloremque ex vitae impedit voluptas quas ipsa, praesentium neque! Labore cupiditate animi facere earum aliquam beatae ab qui! Ea, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptas rerum accusamus voluptatibus doloremque corporis at doloribus. Sit eligendi aliquam quis modi fugit, labore necessitatibus non doloremque, reiciendis fugiat eveniet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores nemo, tempore a nobis, illum hic provident fugiat animi, assumenda non asperiores eos quas obcaecati praesentium. Iure recusandae dicta nobis.</p>
+			</div>
+			<div class="divi2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore illum numquam ducimus, cumque fugiat soluta, odio odit cum. Error inventore temporibus, molestias quos quas fugiat nostrum similique ipsa distinctio rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, culpa doloremque ex vitae impedit voluptas quas ipsa, praesentium neque! Labore cupiditate animi facere earum aliquam beatae ab qui! Ea, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptas rerum accusamus voluptatibus doloremque corporis at doloribus. Sit eligendi aliquam quis modi fugit, labore necessitatibus non doloremque, reiciendis fugiat eveniet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores nemo, tempore a nobis, illum hic provident fugiat animi, assumenda non asperiores eos quas obcaecati praesentium. Iure recusandae dicta nobis.</p>
+			</div>
+      
+				</div>
+			</div>
+		</div>
+
+	<!-- <div class="modal" id="contrata" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -175,7 +243,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- tipo de woomer
   <div class="container">
@@ -214,11 +282,14 @@
 			</div>
 		</div> -->
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/app.js"></script>
 
 
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/compare.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

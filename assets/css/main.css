@@ -58,7 +58,7 @@
   border-radius: 3px;
 }
 
-.range::-ms-tooltip { display: none; /* display and visibility only */ }
+.range::-ms-tooltip { display: none;  display and visibility only  }
 
 .range::-moz-range-thumb {
   border-radius: 20px;
