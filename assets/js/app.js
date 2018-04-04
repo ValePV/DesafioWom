@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
   // Numeros de Moviles comparandose
   var numMobile = 0;
