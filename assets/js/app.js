@@ -25,8 +25,9 @@ function success(data) {
         + "<div class='arriendo'><button class='but-vert-arr'>arriendo</button><span>Pórtate con una cuota inicial desde: </span><span>$" + equipos[i]['cuota_arriendo'] + "</span><span> + 18 cuotas de $" + equipos[i]['cuota_arriendo'] + "</span></div><button class='see-detail'>VER DETALLES</button> <button class='compare'>COMP</button></div></div>");
       }
       $('.compare').click(function(){
-        if(numMobile <= 2) {
+        if(numMobile < 2) {
           console.log('click');
+          numMobile++;
         }
         else {
           alert('Haz alcanzado el maximo de dispositivos a comparar');
