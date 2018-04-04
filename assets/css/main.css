@@ -256,14 +256,20 @@ body {
   z-index: 100;
 }
 
-.btn-compare-section {
+.btn-compare {
+  min-width: 120px;
   display: inline-block;
-  background-color: #831383;
-  color:#4b0a5a;
+  background-color: #fe0084;
+  color:#fff;
   margin:10px;
 }
 
-.btn-compare-section:hover{
+.btn-compare:disabled {
+  background-color: #ccc;
+  color: #1d1d1d;
+}
+
+.btn-compare:hover{
 	background-color: #cccccc;
 	color:#4b0a5a;
 
