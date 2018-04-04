@@ -125,12 +125,22 @@ body {
   margin: 0; 
 }
 
-.compare-section {
+.compare-container {
   width: 100%;
   background-color: purple;
   color: #fff;
   position: fixed;
   bottom: 0;
+}
+
+.btn-compare-section {
+  display: inline-block;
+}
+
+.dual-vision {
+  width: 100%;
+  height: 45vh;
+  overflow: scroll;
 }
 
 /* Media Queries */ 
