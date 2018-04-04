@@ -1,4 +1,7 @@
 $(document).ready(() => {
+
+  $('#contrata').modal();
+
   $.ajax({
   url: 'https://raw.githubusercontent.com/ValePV/DesafioWom/master/assets/js/data2.json',
   type: 'GET',
@@ -20,14 +23,6 @@ $(document).ready(() => {
   
   error: error
 
-  // $('.see-detail').click(function() {
-  //   $('.comparar1').append('<div class="col-sm-12">'${equipos}'</div>');
-  // }); 
-  
- 
-  // $('.see-detail').click(function() {
-  //   alert('que pa');
-  // });
   }
   })
 

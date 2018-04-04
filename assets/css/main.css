@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* tipo de woomer */
+/* tipo de woomer 
 
 .textWoomers{
   font-family: 'Cera';
@@ -115,11 +114,9 @@ output {
 
 .rangeValueDiv {
   float: right;
-}
+} */
 
 /* catalogo */
-=======
->>>>>>> upstream/master
 
 .celsphone{
 	width: 140px;
@@ -220,11 +217,7 @@ ul{
 }
 .valor1{
 	font-size: 12px;
-<<<<<<< HEAD
-}
-=======
 	margin-left: 80px;
-
 }
 
 .valor2{
@@ -287,4 +280,37 @@ ul{
 		margin-top: 13px;
 	}
 }
->>>>>>> upstream/master
+
+/* modal contrata */
+
+.modal-title {
+  text-align: center;
+  font-family: 'Cera';
+  font-weight: '700';
+  /* font-size: 1.5em; */
+}
+
+.pDelModal {
+  text-align: center;
+  color: white;
+  background-color: #4b0a5a;
+  padding: 2%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+}
+
+.input-group {
+  padding-bottom: 3%;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #4b0a5a !important;
+}
+
+.pDelFooter {
+  text-align: center;
+  font-family: 'Cera';
+  font-weight: '700';
+  font-size: 1.7em;
+}
