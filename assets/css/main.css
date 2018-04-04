@@ -2,8 +2,60 @@
 	width: 140px;
 }
 .contain-cel{
-	display: inline-block;
+	float: left;
 }
-.contain-inf-cel{
-	display: inline-block;
+
+ul{
+	list-style: none;
 }
+
+.filtros{
+	display: inline-block;
+	font-size: 12px;
+}
+
+.filtros h4, h3{
+	display: inline-block;
+	font-size: 14px;
+}
+
+.catalogue h2{
+	float: left;
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+.cont-select form{
+	display: inline-block;
+	margin-top: 18px;
+}
+
+.con-select{
+	margin-top: 10px;
+}
+.filtro_orden{
+	padding: 3px;
+	margin-left: 390px;
+}
+
+.soport{
+	width: 120px;
+	/*float: left;*/
+	display: block;
+}
+.but-vert, .but-vert-arr{
+	transform: rotate(-90deg);
+}
+.contain-info h2{
+	font-size: 18px;
+}
+.contain-info h4{
+	font-size: 12px;
+}
+.valor{
+	font-size: 27px;
+}
+.valor1{
+	font-size: 12px;
+}
+
